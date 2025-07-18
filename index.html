@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="EditWithCrazyBoy – Professional Video Editing Portfolio">
+  <meta name="description" content="EditWithCrazyBoy – I’m Hussain, a creative video editor with 5+ years of experience. I deliver high-quality edits, reels, thumbnails & more with fast turnaround at budget-friendly rates. Let’s turn your content into a visual story. Contact via WhatsApp or call now!">
+  <meta name="keywords" content="video editing, YouTube editor, reels, thumbnails, freelance editor, EditWithCrazyBoy, Hussain">
+  <meta name="author" content="Hussain - EditWithCrazyBoy">
+
+  <title>EditWithCrazyBoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #111 url('https://images.unsplash.com/photo-1593642533144-3d62e08c6d1b') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #00ffd9;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.65);
+      border-radius: 12px;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00ffd9;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 10px 0;
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .contact a {
+      display: block;
+      margin: 10px 0;
+      color: #00ffd9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .review-card {
+      background: #222;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      font-size: 24px;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+    .whatsapp {
+      right: 90px;
+      background: #25D366;
+    }
+    .call {
+      right: 20px;
+      background: #ff4757;
+    }
+    .review-form input, .review-form textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background: #333;
+      color: white;
+    }
+    .review-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00ffd9;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EditWithCrazyBoy</h1>
+    <p>I don't just edit — I build visual experiences. 🔥</p>
+  </header>
+
+  <section id="about">
+    <h2>👨‍💻 About Me</h2>
+    <p>Hello! I'm Hussain, a passionate video editor with 5+ years of experience. I create professional YouTube videos, Instagram reels, thumbnails, posters, and more. I don’t just deliver quality – I deliver fast, and at reasonable prices.</p>
+  </section>
+
+  <section id="services">
+    <h2>💼 Services & Pricing</h2>
+    <ul>
+      <li><strong>YouTube Vlogs / Reels Editing:</strong><br>₹300 – ₹800 per video (5–10 min)</li>
+      <li><strong>Instagram Reels / Shorts (under 1 min):</strong><br>₹100 – ₹400 per reel</li>
+      <li><strong>Event / Wedding Teasers (basic):</strong><br>₹1,000 – ₹3,000</li>
+      <li><strong>Per Hour Freelance:</strong><br>₹200 – ₹400/hour</li>
+    </ul>
+  </section>
+
+  <section id="reviews">
+    <h2>🌟 Client Reviews</h2>
+    <div class="review-card">🔥 “Outstanding edits! Exactly what I wanted.” – Ankit</div>
+    <div class="review-card">💯 “Fast delivery & trending style. Loved it!” – Priya</div>
+    <div class="review-card">✨ “Best editor for Instagram reels.” – Tushar</div>
+    <div class="review-form">
+      <h3>Leave your review</h3>
+      <input type="text" id="reviewerName" placeholder="Your Name" />
+      <textarea id="reviewMessage" rows="4" placeholder="Your Review"></textarea>
+      <button onclick="submitReview()">Submit</button>
+      <p id="reviewThanks" style="display:none; color:#00ffd9; margin-top:10px;">Thanks for your feedback!</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact Me</h2>
+    <div class="contact">
+      <a href="tel:9582679286">Call: 9582679286</a>
+      <a href="tel:7827550340">Call: 7827550340</a>
+      <a href="https://wa.me/7827550340" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/7827550340" class="floating whatsapp" target="_blank">💬</a>
+  <a href="tel:9582679286" class="floating call">📞</a>
+
+  <footer>
+    &copy; <span id="year"></span> EditWithCrazyBoy. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function submitReview() {
+      const name = document.getElementById("reviewerName").value.trim();
+      const msg = document.getElementById("reviewMessage").value.trim();
+      if (name && msg) {
+        document.getElementById("reviewThanks").style.display = "block";
+        document.getElementById("reviewerName").value = "";
+        document.getElementById("reviewMessage").value = "";
+      }
+    }
+  </script>
+</body>
+</html>
